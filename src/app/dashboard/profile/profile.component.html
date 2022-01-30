@@ -1,0 +1,12 @@
+<div class="flex flex-col gap-5 w-full justify-center items-center">
+  <div class="w-96">
+    <mat-icon class="cursor-pointer">arrow_back</mat-icon>
+  </div>
+
+  <div class="text-left">
+    <p class="mt-3 text-md">username : {{profile?.name}}</p>
+    <p class="mt-3 text-md">Email : {{profile?.email}}</p>
+    <p class="mt-3 text-md">Address : {{profile?.address?.street}} {{profile?.address?.suite}} {{profile?.address?.city}} {{profile?.address?.zipcode}}</p>
+    <p class="mt-3 text-md">Phone : {{profile?.phone}}</p>
+  </div>
+</div>

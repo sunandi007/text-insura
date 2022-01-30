@@ -1,0 +1,7 @@
+<div class="flex-col" >
+  <div class="flex justify-start mx-14" *ngFor="let item of postList; let i = index">
+    <p class="mr-4 font-bold">{{postList[i]?.userId}}</p>
+    <p class="text-gray">{{postList[i]?.title}}</p>
+    <p class="text-blue cursor-pointer" [routerLink]="['/post/' + postList[i]?.userId]">Detail</p>
+  </div>
+</div>
